@@ -1,2 +1,2 @@
 # DRgestiones
-Empresa de asesrias contables y tributarias
+Empresa de asesorías contables y tributarias
