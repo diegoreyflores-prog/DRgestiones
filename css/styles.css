@@ -1,0 +1,74 @@
+:root{
+  --coral:#ff4f4c;--orange:#ff8350;--charcoal:#4b4b4d;--dark:#2f3033;
+  --muted:#f3f3f4;--white:#fff;--shadow:0 14px 40px rgba(0,0,0,.09)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;color:var(--charcoal);line-height:1.65;background:#fff}
+img{max-width:100%}
+.wrap{width:min(1160px,86%);margin:auto}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);box-shadow:0 3px 18px rgba(0,0,0,.08);backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:78px}
+.brand img{width:165px;display:block}
+.nav-links{display:flex;gap:26px}
+.nav-links a{text-decoration:none;color:var(--dark);font-weight:700;font-size:.95rem}
+.nav-links a:hover{color:var(--coral)}
+.menu-btn{display:none;border:0;background:none;font-size:1.7rem}
+.hero{min-height:82vh;display:flex;align-items:center;color:#fff;background:
+linear-gradient(90deg,rgba(28,29,31,.90),rgba(28,29,31,.72) 50%,rgba(28,29,31,.34)),
+url("../assets/office-background.svg") center/cover no-repeat}
+.hero-content{padding:70px 0;max-width:760px}
+.hero-logo{background:rgba(255,255,255,.96);width:245px;padding:12px 16px;border-radius:14px;box-shadow:0 16px 40px rgba(0,0,0,.24);margin-bottom:24px}
+.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.18em;color:#ffd7cc}
+.hero h1{font-size:clamp(2.6rem,5vw,4.8rem);line-height:1.02;letter-spacing:-.04em;margin:8px 0 18px}
+.hero h1 span{color:var(--orange)}
+.lead{font-size:1.18rem;max-width:680px;color:#f2f2f2}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:14px 23px;border-radius:10px;text-decoration:none;font-weight:800;transition:.2s;border:0;cursor:pointer;font:inherit}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.primary{background:linear-gradient(135deg,var(--coral),var(--orange));color:#fff}
+.secondary{border:2px solid #fff;color:#fff;background:rgba(255,255,255,.06)}
+.full{width:100%}
+.section{padding:82px 0}
+.muted{background:var(--muted)}
+.section-title{text-align:center;max-width:760px;margin:0 auto 46px}
+.section-title span{color:var(--coral);font-size:.78rem;font-weight:900;letter-spacing:.2em}
+.section-title h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;color:var(--dark);margin:8px 0 12px}
+.section-title h2:after{content:"";display:block;width:70px;height:5px;border-radius:5px;background:linear-gradient(90deg,var(--coral),var(--orange));margin:16px auto}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:stretch}
+.panel{background:#fff;padding:34px;border-radius:18px;box-shadow:var(--shadow)}
+.panel h3{font-size:1.55rem;color:var(--dark);margin-top:0}
+.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.mini-card{background:#fff;padding:24px;border-radius:16px;box-shadow:var(--shadow);border-left:5px solid var(--orange)}
+.mini-card strong{display:block;color:var(--dark);margin-bottom:7px}
+.mini-card span{font-size:.95rem}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service{background:#fff;padding:29px;border-radius:17px;box-shadow:var(--shadow);border-top:5px solid transparent;transition:.25s}
+.service:hover{transform:translateY(-6px);border-top-color:var(--coral)}
+.icon{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;color:#fff;font-size:1.5rem;background:linear-gradient(135deg,var(--coral),var(--orange));margin-bottom:18px}
+.service h3{color:var(--dark);margin:0 0 8px}
+.dark-section{background:linear-gradient(rgba(41,42,45,.94),rgba(41,42,45,.94)),url("../assets/office-background.svg") center/cover fixed;color:#fff}
+.section-title.light h2{color:#fff}
+.benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.benefit{padding:27px;border:1px solid rgba(255,255,255,.16);border-radius:16px;background:rgba(255,255,255,.07);backdrop-filter:blur(6px)}
+.benefit b{color:var(--orange);font-size:1.15rem}
+.benefit h3{margin:8px 0}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px}
+.contact-card p{margin:18px 0}
+label{display:block;font-weight:700;color:var(--dark);margin-bottom:12px}
+input,textarea{width:100%;margin-top:7px;padding:13px 14px;border:1px solid #d8d8da;border-radius:10px;font:inherit}
+textarea{min-height:130px;resize:vertical}
+footer{background:var(--dark);color:#ddd;padding:28px 0}
+.footer-content{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer-content img{width:145px;background:#fff;padding:8px;border-radius:10px}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;text-decoration:none;font-size:1.7rem;box-shadow:0 12px 28px rgba(0,0,0,.25);z-index:50}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){
+  .menu-btn{display:block}.nav-links{position:absolute;left:0;right:0;top:78px;background:#fff;display:none;flex-direction:column;padding:20px 7%;box-shadow:0 10px 18px rgba(0,0,0,.08)}
+  .nav-links.open{display:flex}.about-grid,.contact-grid{grid-template-columns:1fr}.service-grid{grid-template-columns:repeat(2,1fr)}.benefit-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .wrap{width:min(90%,1160px)}.section{padding:62px 0}.hero{min-height:84vh}.hero-logo{width:205px}
+  .service-grid,.benefit-grid,.mini-grid{grid-template-columns:1fr}.footer-content{flex-direction:column;text-align:center}.brand img{width:145px}
+}
